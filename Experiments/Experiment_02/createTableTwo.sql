@@ -1,0 +1,1 @@
+create table 用户表 (用户编号 char(7) primary key not null, 用户名 varchar(20) not null, 出生日期 date check(出生日期 > '2025-01-01') not null, 性别 char(2) check(性别 = '男' or 性别 = '女') not null, 联系方式 char(11) unique not null);
